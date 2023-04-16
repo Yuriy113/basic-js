@@ -28,21 +28,16 @@ function transform(arr) {
         break;
       case '--discard-next':
         if (res[i + 1]) {
-          res[i] = null;
           res[i + 1] = null;
-        } else {
-          res[i] = null;
         }
+        res[i] = null;
         break;
       case '--discard-prev':
         if (res[i - 1]) {
-          res[i] = null;
           res[i - 1] = null;
-        } else {
-          res[i] = null;
         }
+        res[i] = null;
         break;
-
       default:
         break;
     }
